@@ -1,0 +1,129 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lato", sans-serif;
+}
+
+body,
+html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1,
+.bgimg-2,
+.bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url("../images/Parallax_img/Top_Tower.png");
+  min-height: 100%;
+  opacity: 50%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("/w3images/parallax2.jpg");
+  min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("/w3images/parallax3.jpg");
+  min-height: 400px;
+}
+
+.w3-wide {
+  letter-spacing: 10px;
+}
+
+.w3-hover-opacity {
+  cursor: pointer;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1,
+  .bgimg-2,
+  .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+
+/* face */
+
+#my_face {
+  border-radius: 15px;
+  height: 100px;
+  width: 100px;
+  filter: drop-shadow(5px 5px 5px #666666);
+  position: relative;
+}
+
+#my_face:hover {
+  cursor: grab;
+}
+
+#my_face:active {
+  cursor: grabbing;
+}
+
+#my_face_div {
+  z-index: 100;
+}
+
+/* logo KR*/
+
+.kr_logo {
+  width: 50px;
+  filter: drop-shadow(5px 5px 5px #4444dd);
+  cursor: pointer;
+}
+
+.kr_logo:hover {
+  transform: translateY(2px);
+  filter: drop-shadow(3px 3px 3px #3333a8);
+}
+
+.kr_logo:active {
+  transform: translateY(5px);
+  filter: drop-shadow(0px 0px 0px #1f1f64);
+}
+
+@media only screen and (min-width: 1024px) {
+  #my_face {
+    border-radius: 20px;
+    height: 200px;
+    width: 200px;
+    filter: drop-shadow(5px 5px 5px #666666);
+    position: relative;
+  }
+  .kr_logo {
+    width: 150px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  #my_face {
+    border-radius: 20px;
+    height: 200px;
+    width: 200px;
+    filter: drop-shadow(5px 5px 5px #666666);
+    position: relative;
+  }
+  .kr_logo {
+    width: 150px;
+  }
+}
