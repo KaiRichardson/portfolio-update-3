@@ -182,3 +182,12 @@ img {
 }
 
 /************** CONTACT **************/
+
+#send{
+  text-decoration: none;
+}
+
+.perf-links:hover{
+  opacity: 0.8;
+  cursor: pointer;
+}
