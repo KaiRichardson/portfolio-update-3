@@ -35,34 +35,3 @@ function toggleFunction() {
   }
 }
 
-$("#my_face").on("click", function () {
-  if ($("#my_face").attr("clicked") != "true") {
-    $("#my_face").attr("src", "./assets/images/Logo_img/my-face-forward-sq.png");
-
-    $("#logo_k").animate({
-      right: '+=100',
-      bottom: '+=100'
-    }, 1000);
-    $("#logo_r").animate({
-      left: '+=100',
-      top: '+=100'
-    }, 1000);
-
-    $("#my_face").attr("clicked", "true")
-
-  } else {
-    $("#my_face").attr("src", "./assets/images/Logo_img/my-face-smile-sq.png");
-
-    $("#logo_k").animate({
-      right: '-=100',
-      bottom: '-=100'
-    }, 1000);
-    $("#logo_r").animate({
-      left: '-=100',
-      top: '-=100'
-    }, 1000);
-
-    $("#my_face").attr("clicked", "false")
-  }
-});
-
