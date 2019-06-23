@@ -99,13 +99,13 @@ html {
   cursor: grabbing;
 }
 
-#bio-name{
-margin-bottom: 0;
+#bio-name {
+  margin-bottom: 0;
 }
 
-#bio-2 p{
-margin: 50px;
-/* right: 50%; */
+#bio-2 p {
+  margin: 50px;
+  /* right: 50%; */
 }
 
 /************** PORTFOLIO **************/
@@ -115,7 +115,6 @@ margin: 50px;
   opacity: 0.8;
   padding: 0 10px;
 }
-
 
 img {
   transition: 0.3s ease;
@@ -133,7 +132,6 @@ img {
   -ms-transform: translate(-50%, -50%);
   text-align: center;
   transition: 0.3s ease;
-
 }
 
 .container:hover img {
@@ -170,7 +168,7 @@ img {
 .btn:active {
   transition: 0.2s ease;
   filter: none;
-  background-color:  rgb(238, 116, 116);
+  background-color: rgb(238, 116, 116);
 }
 
 .proj_name {
@@ -181,8 +179,6 @@ img {
   top: 95px;
   left: 90px;
   transition: 0.2s ease;
-
 }
 
 /************** CONTACT **************/
-
