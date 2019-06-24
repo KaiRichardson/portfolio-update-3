@@ -183,11 +183,18 @@ img {
 
 /************** CONTACT **************/
 
-#send{
+#send {
   text-decoration: none;
 }
 
-.perf-links:hover{
+.perf-links:hover {
   opacity: 0.8;
   cursor: pointer;
+}
+
+/************** PIE CHART **************/
+
+.chart{
+width: 50%;
+padding: 20px;
 }
