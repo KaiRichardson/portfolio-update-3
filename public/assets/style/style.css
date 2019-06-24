@@ -15,10 +15,6 @@ html {
   line-height: 1.8;
 }
 
-.w3-bar-item {
-  color: rgb(107, 107, 107);
-}
-
 /* Create a Parallax Effect */
 .bgimg-1,
 .bgimg-2,
@@ -29,42 +25,14 @@ html {
   background-size: cover;
 }
 
-/* First image (Logo. Full height) */
-.bgimg-1 {
-  background-image: url("../images/Parallax_img/Top_Tower.png");
-  min-height: 100%;
-  opacity: 50%;
-}
-
-/* Second image (Portfolio) */
-.bgimg-2 {
-  background-image: url("../images/Parallax_img/Dog.jpg");
-  min-height: 400px;
-}
-
-/* Third image (Contact) */
-.bgimg-3 {
-  background-image: url("../images/Parallax_img/Wave's.jpg");
-  min-height: 400px;
-}
-
 .w3-wide {
   letter-spacing: 10px;
 }
 
-.w3-hover-opacity {
-  cursor: pointer;
-  transition: 0.3s ease;
-}
+/************** NAV BAR **************/
 
-/* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1000px) {
-  .bgimg-1,
-  .bgimg-2,
-  .bgimg-3 {
-    background-attachment: scroll;
-    min-height: 400px;
-  }
+.w3-bar-item {
+  color: rgb(107, 107, 107);
 }
 
 /************** HOME **************/
@@ -72,6 +40,13 @@ html {
 #logo {
   height: 30vw;
   min-height: 100px;
+}
+
+/* Home Div Img */
+.bgimg-1 {
+  background-image: url("../images/Parallax_img/Top_Tower.png");
+  min-height: 100%;
+  opacity: 50%;
 }
 
 /************** ABOUT **************/
@@ -109,6 +84,12 @@ html {
 }
 
 /************** PORTFOLIO **************/
+
+/* Portfolio Div Img */
+.bgimg-2 {
+  background-image: url("../images/Parallax_img/Dog.jpg");
+  min-height: 400px;
+}
 
 .container {
   position: relative;
@@ -183,6 +164,12 @@ img {
 
 /************** CONTACT **************/
 
+/* Contact Div Img */
+.bgimg-3 {
+  background-image: url("../images/Parallax_img/Wave's.jpg");
+  min-height: 400px;
+}
+
 #send {
   text-decoration: none;
 }
@@ -200,6 +187,8 @@ img {
   text-align: center;
 }
 
+/************** MEDIA Q **************/
+
 @media only screen and (max-device-width: 600px) {
   .chart {
     width: 100%;
@@ -208,3 +197,14 @@ img {
     margin-top: 50%;
   }
 }
+
+@media only screen and (max-device-width: 900px) {
+  /* Turn off parallax scrolling for tablets and phones */
+  .bgimg-1,
+  .bgimg-2,
+  .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+
